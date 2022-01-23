@@ -1,0 +1,16 @@
+<h2>Our Family members</h2>
+<table   border="1" style ="color:blue;">
+<tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Phone</th>
+    <th>Address</th>
+</tr>
+<tr *ngFor="let tempmemberlist of memberList">
+    <td>{{tempmemberlist.firstName}}</td>
+    <td>{{tempmemberlist.lastName}}</td>
+    <td>{{tempmemberlist.phone}}</td>
+    <td>{{tempmemberlist.salary}}</td>
+</tr>
+
+</table>
