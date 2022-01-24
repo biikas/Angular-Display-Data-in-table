@@ -3,7 +3,7 @@ import { Member } from './member';
 
 @Component({
   selector: 'app-members-list',
-  templateUrl: './members-list.component.html',
+  templateUrl: './members-list.component-bootsrap.html',
   styleUrls: ['./members-list.component.css']
 })
 export class MembersListComponent implements OnInit {
@@ -14,7 +14,6 @@ export class MembersListComponent implements OnInit {
     new Member("Bal Kumari","Bhandari",9814301921,50000),
     new Member("Priya","Shah",9814301921,50000),    
     new Member("Bivuti","Shah",9814301921,50000)  
-
   ]
 
   constructor() { }

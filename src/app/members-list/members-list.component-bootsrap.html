@@ -1,0 +1,41 @@
+<h2>Our Family members</h2>
+<h3>With out bootstrap</h3>
+<table border="1" style="color:blue;">
+    <tr>
+        <thead class="thead-dark">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </thead>
+    </tr>
+    <tr *ngFor="let tempmemberlist of memberList">
+        <td>{{tempmemberlist.firstName}}</td>
+        <td>{{tempmemberlist.lastName}}</td>
+        <td>{{tempmemberlist.phone}}</td>
+        <td>{{tempmemberlist.salary}}</td>
+    </tr>
+    
+</table>
+<h3>With bootstrap integration</h3>
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+            
+        <tr *ngFor="let temppmemberlist of memberList">
+            <td>{{temppmemberlist.firstName}}</td>
+            <td>{{temppmemberlist.lastName}}</td>
+            <td>{{temppmemberlist.phone}}</td>
+            <td>{{temppmemberlist.salary}}</td>
+        </tr>
+
+
+    </tbody>
+</table>
